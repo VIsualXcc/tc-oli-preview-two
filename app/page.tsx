@@ -6,13 +6,11 @@ import { HeroTwo } from "@/components/hero_TwoColumn";
 import { SpotlightLogoCloud } from "@/components/logos-cloud";
 import { Pricing } from "@/components/pricing";
 import { Testimonials } from "@/components/testimonials";
-import SEO from "@/components/seo";
 
 
 export default function Home() {
   return (
     <div>
-      <SEO />
       <Hero />
       <HeroTwo />
       <SpotlightLogoCloud />
