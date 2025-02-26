@@ -71,7 +71,7 @@ const DesktopNav = ({ navItems, visible }: NavbarProps) => {
       onMouseLeave={() => setHoveredIndex(null)}
       animate={{
         backdropFilter: "blur(16px)",
-        background: visible ? "rgba(0, 0, 0, 0.7)" : "rgba(0, 0, 0, 0.4)",
+        background: visible ? "rgba(0, 0, 0, 0.1)" : "rgba(0, 0, 0, 0.4)",
         width: visible ? "38%" : "80%",
         height: visible ? "48px" : "64px",
         y: visible ? 8 : 0,

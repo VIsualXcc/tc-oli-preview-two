@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { HiArrowRight } from "react-icons/hi2";
 import Image from "next/image";
+import Link from "next/link";
 import ReactPlayer from "react-player/youtube";
 import {
   motion,
@@ -15,15 +16,16 @@ import {
 
 import { BsStarFill } from "react-icons/bs";
 import { cn } from "@/lib/utils";
+import { Button } from "./button";
 
 export function HeroTwo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 max-w-7xl mx-auto pt-20 md:pt-40 relative overflow-hidden px-4 md:px-8">
       <div className="flex  flex-col items-start">
-        <h3 className="text-3xl md:text-5xl md:leading-tight max-w-5xl text-left tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b dark:from-neutral-800 dark:via-white dark:to-white from-neutral-800 via-neutral-600 to-neutral-600">
+        <h3 className="text-3xl md:text-5xl md:leading-tight max-w-5xl text-left tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 via-white to-white">
           Starte Deine Ausbildung zu Trader
         </h3>
-        <p className=" mt-2 md:mt-6 text-left md:text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl  relative z-10">
+        <p className=" mt-2 md:mt-6 text-left md:text-xl text-neutral-400 max-w-3xl relative z-10">
           Lerne von einem Ex-Deutsche Bank trader, mit über 30 Jahren erfahrung auf internationalen Märkten. Profitiere von unserer Comunity mit 1500+ Mitgliedern
         </p>
         <FeaturedImages
@@ -31,24 +33,31 @@ export function HeroTwo() {
           className="lg:justify-start justify-start items-center"
           showStars
         />
-        <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start w-full items-center">
-          <div className="flex items-center gap-4 justify-start my-4 relative z-10">
-            <button className="flex space-x-2 items-center group bg-gradient-to-b from-gray-300 to-gray-600 px-4 py-2 rounded-2xl text-white shadow-[0px_3px_0px_0px_rgba(255,255,255,0.1)_inset]">
-              <span>Jetzt bewerben</span>{" "}
-              <HiArrowRight className="text-white group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
-            </button>
-          </div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2, delay: 0.7 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start w-full items-center my-4 relative z-10"
+        >
+          <Button
+            as={Link}
+            href="/login"
+            variant="primary"
+            className="w-full sm:w-40 h-12 rounded-full flex items-center justify-center"
+          >
+            <span>Jetzt bewerben</span>
+            <HiArrowRight className="ml-2 group-hover:translate-x-1 stroke-[1px] h-3 w-3 transition-transform duration-200" />
+          </Button>
+        </motion.div>
       </div>
       <div>
       {/* YouTube-Video via <iframe> */}
-      <div className="border border-neutral-200 dark:border-neutral-800 rounded-3xl p-4 bg-neutral-100 dark:bg-neutral-900 shadow-[0px_0px_5px_1px_rgba(0,0,0,0.05)_inset] dark:shadow-[0px_0px_5px_1px_rgba(255,255,255,0.05)_inset]">
+      <div className="border border-neutral-700 rounded-3xl p-4 bg-neutral-900 shadow-[0px_0px_5px_1px_rgba(255,255,255,0.05)_inset]">
         <div className="relative w-full pb-[56.25%] h-0 rounded-2xl overflow-hidden">
           <iframe
             className="absolute top-0 left-0 w-full h-full rounded-2xl"
             src="https://www.youtube.com/embed/fNILBkfYLqQ"
             title="YouTube video player"
-            frameBorder="1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
@@ -206,7 +215,7 @@ export const FeaturedImages = ({
                   transition={{
                     duration: 0.2,
                   }}
-                  className="rounded-2xl overflow-hidden border-2  border-neutral-200  relative"
+                  className="rounded-2xl overflow-hidden border-2 border-neutral-700 relative"
                 >
                   <Image
                     onMouseMove={handleMouseMove}

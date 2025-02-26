@@ -4,12 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 const LogoIcon = () => (
-    <div className="w-10 h-10 flex items-center justify-center">
+    <div className="w-20 h-20 flex items-center justify-center">
       <Image
         src="/tco-logo.png"
         alt="Trading Coach Oli Logo"
-        width={40} // Anpassbare Größe
-        height={40}
+        width={60} // Anpassbare Größe
+        height={60}
         priority
         className="rounded-full"
       />
