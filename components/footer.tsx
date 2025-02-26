@@ -4,44 +4,45 @@ import { Logo } from "./logo";
 import {
   IconBrandDiscord,
   IconBrandLinkedin,
-  IconBrandMastodon,
-  IconBrandTwitter,
+  IconBrandYoutube,
 } from "@tabler/icons-react";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 export function Footer() {
   const documentation = [
-    { title: "Getting Started", href: "#" },
-    { title: "API Reference", href: "#" },
-    { title: "Integrations", href: "#" },
-    { title: "Examples", href: "#" },
-    { title: "SDKs", href: "#" },
+    { title: "Vorbereitung", href: "#" },
+    { title: "Bewerbung", href: "#" },
+    { title: "Club", href: "#" },
+    { title: "Elite", href: "#" },
+    { title: "Mentoring", href: "#" },
   ];
 
   const resources = [
-    { title: "Changelog", href: "#" },
-    { title: "Pricing", href: "#" },
-    { title: "Status", href: "#" },
-    { title: "Webhooks", href: "#" },
+    { title: "Änderungen", href: "#" },
+    { title: "Preise", href: "#" },
+    { title: "Affiliate", href: "#" },
+    { title: "Links", href: "#" },
   ];
 
   const company = [
-    { title: "Blog", href: "#" },
-    { title: "Contact", href: "#" },
-    { title: "Customers", href: "#" },
-    { title: "Brand", href: "#" },
+    { title: "Hilfe", href: "#" },
+    { title: "Kontakt", href: "#" },
+    { title: "Kunden", href: "#" },
+    { title: "Partner", href: "#" },
   ];
 
   const legal = [
-    { title: "Acceptable Use", href: "#" },
-    { title: "Privacy Policy", href: "#" },
-    { title: "Terms of Service", href: "#" },
+    { title: "Datenschutz", href: "#" },
+    { title: "Impressum", href: "#" },
+    { title: "AGB", href: "#" },
   ];
 
   const socials = [
-    { title: "Twitter", href: "#", icon: IconBrandTwitter },
+    { title: "Twitter", href: "#", icon: FaXTwitter },
     { title: "Discord", href: "#", icon: IconBrandDiscord },
     { title: "LinkedIn", href: "#", icon: IconBrandLinkedin },
-    { title: "Mastodon", href: "#", icon: IconBrandMastodon },
+    { title: "Youtube", href: "#", icon: IconBrandYoutube },
   ];
 
   return (
@@ -52,7 +53,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl my-28 mx-auto text-sm text-neutral-400 flex flex-col justify-between md:px-8">
+      <div className="max-w-7xl my-28  mx-auto text-sm text-neutral-400 flex flex-col justify-between md:px-8">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-10 md:mb-0">
             <Logo />
@@ -67,7 +68,7 @@ export function Footer() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-20">
             <div className="flex flex-col space-y-4">
-              <p className="text-white font-semibold">Documentation</p>
+              <p className="text-white font-semibold">Dokumentaion</p>
               <ul className="space-y-3">
                 {documentation.map((item, idx) => (
                   <li key={`doc-${idx}`}>
@@ -83,7 +84,7 @@ export function Footer() {
             </div>
 
             <div className="flex flex-col space-y-4">
-              <p className="text-white font-semibold">Resources</p>
+              <p className="text-white font-semibold">Informationen</p>
               <ul className="space-y-3">
                 {resources.map((item, idx) => (
                   <li key={`resource-${idx}`}>
@@ -99,7 +100,7 @@ export function Footer() {
             </div>
 
             <div className="flex flex-col space-y-4">
-              <p className="text-white font-semibold">Company</p>
+              <p className="text-white font-semibold">Kontakt</p>
               <ul className="space-y-3">
                 {company.map((item, idx) => (
                   <li key={`company-${idx}`}>
@@ -115,7 +116,7 @@ export function Footer() {
             </div>
 
             <div className="flex flex-col space-y-4">
-              <p className="text-white font-semibold">Legal</p>
+              <p className="text-white font-semibold">Rechtliches</p>
               <ul className="space-y-3">
                 {legal.map((item, idx) => (
                   <li key={`legal-${idx}`}>
