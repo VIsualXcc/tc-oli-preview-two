@@ -2,25 +2,25 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Balancer from "react-wrap-balancer";
+// Balancer import entfernt, da es nicht verwendet wird
 
 export function SpotlightLogoCloud() {
   const logos = [
     {
       name: "Trustpilot",
-      src: "https://media.cleanshot.cloud/media/85423/sdFJz4pxGSjpdAiQbgWaXXD6ZNcJwz1CjeDWvQQZ.jpeg?Expires=1740469217&Signature=pZNMKBx6dZ90odaGcO3n6dqvXF~mXh4Hq8nenanAjvFoDtY4cm8qpEXbqzJmrQWBPuQLqCxcQx7SogK3smP6Nu4UCKx0NIOWUbdbgI3PoaAAotxWjjEguzxM0JnbqxdarWcyAtm-hg6SJzib4OrMk9sf1z56ePSa8AiwWGxzowp8WaCWFmkQESMZKNL9micwGjGSOPSixhcBuqnLTovINIJXTNhnibrPszrqeUrJsEqeaDMHhfiujBZLY-uI3LVO-YVBx95h8VoY2MUooYDLPDUUa9b5Je~SSfaf86bUsIfKwz2mMN~OEGyUnzAM9VPWSFOwiif1v9IYln1RapXzlA__&Key-Pair-Id=K269JMAT9ZF4GZ",
-    },
-    {
-      name: "Abzocktest",
-      src: "https://www.abzocktest.com/wp-content/uploads/2015/12/logo.png",
+      src: "/images/trustpilot.png",
     },
     {
       name: "Kagels Trading",
-      src: "https://www.kagels-trading.de/wp-content/uploads/kagels-trading-logo-2002x708-retina.png",
+      src: "/images/kagels.png",
     },
     {
-      name: "Asteroid Kit",
-      src: "https://assets.aceternity.com/pro/logos/asteroid-kit.png",
+      name: "Wallsteet",
+      src: "/images/wallstreet.png",
+    },
+    {
+      name: "Reddit",
+      src: "/images/reddit.png",
     },
   ];
 
@@ -50,7 +50,7 @@ export function SpotlightLogoCloud() {
               alt={logo.name}
               width={300}
               height={300}
-              className="w-full max-w-[200px] object-contain select-none filter invert"
+              className="w-full max-w-[200px] object-contain select-none filter"
               draggable={false}
             />
           </div>

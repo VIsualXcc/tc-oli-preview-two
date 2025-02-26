@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { HiArrowRight } from "react-icons/hi2";
 import Image from "next/image";
 import Link from "next/link";
-import ReactPlayer from "react-player/youtube";
+// ReactPlayer wurde entfernt, da es nicht verwendet wird
 import {
   motion,
   useTransform,
@@ -88,10 +88,10 @@ export const testimonials = [
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
   },
   {
-    name: "Nancy Davids",
-    designation: "Futures Trader",
+    name: "Dora Klein",
+    designation: "Commodities Trader",
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80",
   },
   {
     name: "Stefan Menne",
@@ -100,10 +100,10 @@ export const testimonials = [
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
   },
   {
-    name: "Dora Klein",
-    designation: "Commodities Trader",
+    name: "Nancy Davids",
+    designation: "Futures Trader",
     image:
-      "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80",
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
   },
 ];
 
@@ -127,8 +127,9 @@ export const FeaturedImages = ({
     springConfig
   );
 
-  const handleMouseMove = (event: any) => {
-    const halfWidth = event.target.offsetWidth / 2;
+  const handleMouseMove = (event: React.MouseEvent<HTMLImageElement>) => {
+    const target = event.target as HTMLImageElement;
+    const halfWidth = target.offsetWidth / 2;
     x.set(event.nativeEvent.offsetX - halfWidth);
   };
 

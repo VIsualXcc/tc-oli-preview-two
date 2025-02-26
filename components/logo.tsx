@@ -1,17 +1,17 @@
 "use client";
-import { cn } from "@/lib/utils";
+// cn import entfernt, da es nicht verwendet wird
 import Link from "next/link";
 import Image from "next/image";
 
 const LogoIcon = () => (
     <div className="w-20 h-20 flex items-center justify-center">
       <Image
-        src="/tco-logo.png"
+        src="/logo.png"
         alt="Trading Coach Oli Logo"
         width={60} // Anpassbare Größe
         height={60}
         priority
-        className="rounded-full"
+        className=""
       />
     </div>
 );

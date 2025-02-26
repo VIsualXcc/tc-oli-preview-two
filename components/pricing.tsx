@@ -3,7 +3,7 @@ import React from "react";
 import { IconCheck, IconX } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { Button } from "./button";
-import { IconGift } from "@/icons/gift";
+// IconGift import entfernt, da es nicht verwendet wird
 
 import { useEffect, useState } from "react";
 

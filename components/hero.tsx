@@ -8,7 +8,7 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import Balancer from "react-wrap-balancer";
+// Balancer wurde entfernt, da es nicht verwendet wird
 import Link from "next/link";
 import { Button } from "./button";
 import { GlowingEffect } from "./ui/glowing-effect";

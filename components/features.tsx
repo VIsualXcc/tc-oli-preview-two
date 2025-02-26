@@ -13,16 +13,10 @@ import {
   IconCurrencyDollar,
   IconCurrencyBitcoin,
   IconCurrencyPound,
-  IconBrandFacebook,
   IconBrandDiscord,
-  IconBrandGmail,
-  IconBrandLinkedin,
-  IconBrandNotion,
   IconBrandReddit,
   IconBrandSlack,
-  IconBrandTwitch,
   IconBrandTwitter,
-  IconBrandX,
   IconBrandYoutube,
 } from "@tabler/icons-react";
 import { GlowingEffect } from "./ui/glowing-effect";
@@ -894,20 +888,17 @@ const MapView = () => {
     });
   }, []);
 
-  const flashingPoints = useMemo(() => {
-    const points = [];
-    const numPoints = 8;
-
-    for (let i = 0; i < numPoints; i++) {
-      points.push({
-        x: 15 + Math.random() * 70,
-        y: 15 + Math.random() * 70,
-        delay: (i / numPoints) * 3,
-        duration: 2 + Math.random(),
-      });
-    }
-    return points;
-  }, []);
+  // Definierte Positionen für die Punkte anstatt zufälliger Werte
+  const flashingPoints = useMemo(() => [
+    { x: 24.5, y: 83.1, delay: 0, duration: 2.5 },
+    { x: 43.3, y: 34.5, delay: 0.4, duration: 2.8 },
+    { x: 23.6, y: 35.2, delay: 0.8, duration: 2.2 },
+    { x: 63.8, y: 63.8, delay: 1.2, duration: 3.0 },
+    { x: 41.5, y: 67.5, delay: 1.6, duration: 2.7 },
+    { x: 74.6, y: 60.7, delay: 2.0, duration: 2.4 },
+    { x: 54.9, y: 73.8, delay: 2.4, duration: 2.9 },
+    { x: 43.1, y: 82.1, delay: 2.8, duration: 2.6 },
+  ], []);
 
   return (
     <div className="relative w-full h-full overflow-hidden">
