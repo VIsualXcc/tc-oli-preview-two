@@ -8,7 +8,7 @@ export function ClientOnly({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     // Nutze requestIdleCallback für weniger CPU-Last während des Ladens
     if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
-      // @ts-expect-error - TypeScript kennt requestIdleCallback nicht ohne lib.dom.d.ts Erweiterung
+      // requestIdleCallback für sanftes Mounting nutzen
       window.requestIdleCallback(() => {
         setIsMounted(true);
       });

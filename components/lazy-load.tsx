@@ -41,7 +41,7 @@ export default function LazyLoad({
     // requestIdleCallback nutzen, wenn verfügbar
     try {
       if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
-        // @ts-expect-error - TypeScript kennt requestIdleCallback nicht automatisch
+        // requestIdleCallback für performantes Laden verwenden
         window.requestIdleCallback(
           () => {
             if (isInView) {
