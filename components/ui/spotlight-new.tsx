@@ -30,7 +30,7 @@ const SpotlightComponent = ({
   disabled = false,
 }: SpotlightProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | undefined>(undefined);
   const positionRef = useRef({ left: 0, right: 0, direction: 1 });
   
   // Bei Unmount: Bereinige Animationen
