@@ -6,7 +6,7 @@ interface UseIntersectionObserverOptions {
 }
 
 export function useIntersectionObserver(
-  elementRef: RefObject<Element>,
+  elementRef: RefObject<Element | null>,
   options: UseIntersectionObserverOptions = {}
 ): boolean {
   const [isIntersecting, setIsIntersecting] = useState(false);
