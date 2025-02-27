@@ -565,11 +565,11 @@ const IconLogo = ({ className }: { className?: string }) => {
 
 const people = [
   { src: "/images/person1.png", alt: "Person 1" },
-  { src: "/images/person2.png", alt: "Person 2" },
-  { src: "/images/person3.png", alt: "Person 3" },
-  { src: "/images/person4.png", alt: "Person 4" },
-  { src: "/images/person5.png", alt: "Person 5" },
-  { src: "/images/person6.png", alt: "Person 6" },
+  { src: "/images/person14.png", alt: "Person 2" },
+  { src: "/images/person15.png", alt: "Person 3" },
+  { src: "/images/person17.png", alt: "Person 4" },
+  { src: "/images/person29.png", alt: "Person 5" },
+  { src: "/images/person12.png", alt: "Person 6" },
 ];
 
 const PeopleGrid = () => {

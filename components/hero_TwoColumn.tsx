@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { HiArrowRight } from "react-icons/hi2";
 import Image from "next/image";
 import Link from "next/link";
-// ReactPlayer wurde entfernt, da es nicht verwendet wird
+import { Spotlight } from "./ui/spotlight-new";
 import {
   motion,
   useTransform,
@@ -21,12 +21,14 @@ import { Button } from "./button";
 export function HeroTwo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 max-w-7xl mx-auto pt-20 md:pt-40 relative overflow-hidden px-4 md:px-8">
+      {/* Spotlight hinzugefügt */}
+      <Spotlight className="z-0" />
       <div className="flex  flex-col items-start">
         <h3 className="text-3xl md:text-5xl md:leading-tight max-w-5xl text-left tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 via-white to-white">
           Starte Deine Ausbildung zu Trader
         </h3>
         <p className=" mt-2 md:mt-6 text-left md:text-xl text-neutral-400 max-w-3xl relative z-10">
-          Lerne von einem Ex-Deutsche Bank trader, mit über 30 Jahren erfahrung auf internationalen Märkten. Profitiere von unserer Comunity mit 1500+ Mitgliedern
+          Lerne von einem Ex-Deutsche Bank trader, mit über 30 Jahren erfahrung auf internationalen Märkten. Profitiere von unserer Comunity mit 1500+ Mitgliedern.
         </p>
         <FeaturedImages
           textClassName="lg:text-left text-left"
@@ -104,6 +106,18 @@ export const testimonials = [
     designation: "Futures Trader",
     image:
     "/images/person13.png",
+  },
+  {
+    name: "Dora Klin",
+    designation: "Day Traderin",
+    image:
+    "/images/person4.png",
+  },
+  {
+    name: "Ralph Fischer",
+    designation: "Night Trader",
+    image:
+    "/images/person5.png",
   },
 ];
 
@@ -233,12 +247,13 @@ export const FeaturedImages = ({
         </div>
 
         <div className="flex justify-center ml-6">
-          {[...Array(5)].map((_, index) => (
-            <BsStarFill
-              key={index}
-              className={showStars ? "h-4 w-4 text-yellow-400 mx-1" : "hidden"}
-            />
-          ))}
+          <Image 
+            src="/images/trustpilot.png" 
+            alt="Trustpilot Rating" 
+            width={120} 
+            height={50} 
+            className="object-contain h-12"
+          />
         </div>
       </div>
       <p

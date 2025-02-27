@@ -3,15 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--max-old-space-size=8192' next dev",
-    "build": "NODE_OPTIONS='--max-old-space-size=8192' next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "NODE_OPTIONS='--max-old-space-size=8192' ./node_modules/.bin/next dev",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' ./node_modules/.bin/next build",
+    "start": "./node_modules/.bin/next start",
+    "lint": "./node_modules/.bin/next lint"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.30.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "critters": "^0.0.25",
     "dotted-map": "^2.2.3",
     "framer-motion": "^12.4.7",
     "lucide": "0.476.0",

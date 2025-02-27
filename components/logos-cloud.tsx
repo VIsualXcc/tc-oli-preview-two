@@ -7,8 +7,8 @@ import Image from "next/image";
 export function SpotlightLogoCloud() {
   const logos = [
     {
-      name: "Trustpilot",
-      src: "/images/trustpilot.png",
+      name: "Reddit",
+      src: "/images/reddit.png",
     },
     {
       name: "Kagels Trading",
@@ -19,8 +19,8 @@ export function SpotlightLogoCloud() {
       src: "/images/wallstreet.png",
     },
     {
-      name: "Reddit",
-      src: "/images/reddit.png",
+      name: "Candle Talk",
+      src: "/images/candle.png",
     },
   ];
 

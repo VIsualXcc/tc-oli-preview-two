@@ -10,9 +10,9 @@ const nextConfig = {
   
   // Performance-Optimierungen
   experimental: {
-    optimizePackageImports: ['framer-motion', 'motion/react', 'react-icons'],
-    // CSS-Optimierung
-    optimizeCss: true,
+    optimizePackageImports: ['framer-motion', 'react-icons'],
+    // CSS-Optimierung deaktiviert, um Critters-Probleme zu vermeiden
+    optimizeCss: false,
   },
   
   // Entferne X-Powered-By Header
@@ -27,12 +27,11 @@ const nextConfig = {
     loaderFile: '',
     disableStaticImages: false,
     minimumCacheTTL: 60,
-    formats: ['image/webp', 'image/avif'], // AVIF hinzugefügt für bessere Kompression
-    dangerouslyAllowSVG: false,
+    formats: ['image/webp'], // AVIF entfernt wegen Kompatibilitätsproblemen
+    dangerouslyAllowSVG: true, // SVG erlauben für das Trustpilot-Logo
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     contentDispositionType: 'attachment',
-    qualities: [25, 50, 75, 85], // Höhere Qualität für wichtige Bilder
-    // Bildoptimierung aktivieren
+    qualities: [75, 85], // Qualitätsstufen vereinfacht
     unoptimized: false,
     remotePatterns: [
       { hostname: "assets.aceternity.com" },
