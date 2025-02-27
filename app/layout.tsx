@@ -70,7 +70,7 @@ export default function RootLayout({
         <ClientOnly>
           <Footer />
         </ClientOnly>
-        <Script id="schema-org" type="application/ld+json">
+        <Script id="schema-org" type="application/ld+json" strategy="afterInteractive">
           {JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebSite',

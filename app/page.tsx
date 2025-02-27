@@ -1,11 +1,18 @@
-import CTA from "@/components/cta";
-import { FrequentlyAskedQuestions } from "@/components/faq";
-import { Features } from "@/components/features";
+import { Suspense, lazy } from 'react';
 import { Hero} from "@/components/hero";
 import { HeroTwo } from "@/components/hero_TwoColumn";
-import { SpotlightLogoCloud } from "@/components/logos-cloud";
-import { Pricing } from "@/components/pricing";
-import { Testimonials } from "@/components/testimonials";
+import LazyLoad from '@/components/lazy-load';
+
+// Dynamisch geladene Komponenten
+const SpotlightLogoCloud = lazy(() => import("@/components/logos-cloud").then(mod => ({ default: mod.SpotlightLogoCloud })));
+const Features = lazy(() => import("@/components/features").then(mod => ({ default: mod.Features })));
+const Testimonials = lazy(() => import("@/components/testimonials").then(mod => ({ default: mod.Testimonials })));
+const Pricing = lazy(() => import("@/components/pricing").then(mod => ({ default: mod.Pricing })));
+const FrequentlyAskedQuestions = lazy(() => import("@/components/faq").then(mod => ({ default: mod.FrequentlyAskedQuestions })));
+const CTA = lazy(() => import("@/components/cta"));
+
+// Einfacher Loader für Suspense
+const Loader = () => <div className="h-40 w-full flex items-center justify-center"><div className="animate-pulse w-6 h-6 rounded-full bg-gray-300"></div></div>;
 
 
 export default function Home() {
@@ -13,12 +20,42 @@ export default function Home() {
     <div>
       <Hero />
       <HeroTwo />
-      <SpotlightLogoCloud />
-      <Features />
-      <Testimonials />
-      <Pricing />
-      <FrequentlyAskedQuestions />
-      <CTA />
+      
+      <LazyLoad height={300}>
+        <Suspense fallback={<Loader />}>
+          <SpotlightLogoCloud />
+        </Suspense>
+      </LazyLoad>
+      
+      <LazyLoad height={400}>
+        <Suspense fallback={<Loader />}>
+          <Features />
+        </Suspense>
+      </LazyLoad>
+      
+      <LazyLoad height={400}>
+        <Suspense fallback={<Loader />}>
+          <Testimonials />
+        </Suspense>
+      </LazyLoad>
+      
+      <LazyLoad height={500}>
+        <Suspense fallback={<Loader />}>
+          <Pricing />
+        </Suspense>
+      </LazyLoad>
+      
+      <LazyLoad height={400}>
+        <Suspense fallback={<Loader />}>
+          <FrequentlyAskedQuestions />
+        </Suspense>
+      </LazyLoad>
+      
+      <LazyLoad height={200}>
+        <Suspense fallback={<Loader />}>
+          <CTA />
+        </Suspense>
+      </LazyLoad>
     </div>
   );
 }
