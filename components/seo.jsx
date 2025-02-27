@@ -38,7 +38,7 @@ const SEO = ({
 
       {/* Apple Touch Icon */}
       <meta name="apple-mobile-web-app-title" content="Trading Coach Oli" />
-      <link rel="apple-touch-icon" href={image} />
+      <link rel="apple-icon" href={image} />
       
       {/* Favicon */}
       <link rel="icon" href="/favicon.ico" type="image/x-icon" />

@@ -1,71 +1,56 @@
 "use client";
-import React, { useRef } from "react";
-import {
-  motion,
-  useMotionTemplate,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-// Balancer wurde entfernt, da es nicht verwendet wird
 import Link from "next/link";
 import { Button } from "./button";
-import { GlowingEffect } from "./ui/glowing-effect";
+import { Spotlight as SpotlightEffect } from "./ui/spotlight-new";
 
+// Verbesserte SpotlightNewDemo
+export function SpotlightNewDemo() {
+  return (
+    <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <SpotlightEffect />
+      <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
+        <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+          Spotlight <br /> which is not overused.
+        </h1>
+        <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
+          A subtle yet effective spotlight effect, because the previous version
+          is used a bit too much these days.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+// Optimierte Hero-Komponente mit Spotlight und minimiertem JavaScript
 export function Hero() {
-  const containerRef = useRef<HTMLDivElement>(
-    null
-  ) as React.RefObject<HTMLDivElement>;
-  const parentRef = useRef<HTMLDivElement>(
-    null
-  ) as React.RefObject<HTMLDivElement>;
-
-  const { scrollY } = useScroll({
-    target: parentRef,
-  });
-
-  const translateY = useTransform(scrollY, [0, 100], [0, -20]);
-  const scale = useTransform(scrollY, [0, 100], [1, 0.96]);
-  const blurPx = useTransform(scrollY, [0, 100], [0, 5]);
-  const filterBlurPx = useMotionTemplate`blur(${blurPx}px)`;
-
   return (
     <div
-      ref={parentRef}
       className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 pt-20 md:px-4 md:pt-40 bg-black"
     >
+      {/* Spotlight-Effekt hinzugefügt */}
+      <SpotlightEffect />
+      
       <div className="text-balance relative z-20 mx-auto mb-4 mt-4 max-w-4xl text-center text-4xl font-semibold tracking-tight text-neutral-300 md:text-7xl">
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            style={{
-              y: translateY,
-              scale,
-              filter: filterBlurPx,
-            }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className={cn(
-              "inline-block bg-[radial-gradient(61.17%_178.53%_at_38.83%_-13.54%,#3B3B3B_0%,#888787_12.61%,#FFFFFF_50%,#888787_80%,#3B3B3B_100%)]",
-              "bg-clip-text text-transparent"
-            )}
-          >
-            Professional Daytrading by Coach Oliver Klemm
-          </motion.h1>
+        <h1
+          className={cn(
+            "inline-block bg-[radial-gradient(61.17%_178.53%_at_38.83%_-13.54%,#3B3B3B_0%,#888787_12.61%,#FFFFFF_50%,#888787_80%,#3B3B3B_100%)]",
+            "bg-clip-text text-transparent"
+          )}
+        >
+          Professional Daytrading by Coach Oliver Klemm
+        </h1>
       </div>
       
-      <motion.p
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2, delay: 0.5 }}
-        className="relative z-20 mx-auto mt-4 max-w-xl px-4 text-center text-base/6 text-gray-500  sm:text-base"
+      <h2
+        className="relative z-20 mx-auto mt-4 max-w-xl px-4 text-center text-base/6 text-white sm:text-base font-light"
       >
-        personal coaching • profen expert • 30+ years experience • all markets
-      </motion.p>
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2, delay: 0.7 }}
+        <span className="font-semibold">personal coaching</span> &bull; <span className="font-semibold">proven expert</span> &bull; <span className="font-semibold">30+ years experience</span> &bull; <span className="font-semibold">all markets</span>
+      </h2>
+      
+      <div
         className="mb-8 mt-6 sm:mb-10 sm:mt-8 flex w-full flex-col items-center justify-center gap-4 px-4 sm:px-8 sm:flex-row md:mb-20"
       >
         <Button
@@ -73,33 +58,29 @@ export function Hero() {
           href="/login"
           variant="primary"
           className="w-full sm:w-40 h-12 rounded-full flex items-center justify-center"
+          aria-label="Jetzt für Coaching bewerben"
         >
          jetzt bewerben
         </Button>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.9, ease: "easeOut" }}
-        ref={containerRef}
+      </div>
+      
+      {/* Hero Image Container - optimiert und vereinfacht */}
+      <div
         className="relative mx-auto w-full max-w-7xl p-2 backdrop-blur-lg md:p-4"
       >
-        <div className="rounded-[50px] relative">
-          <GlowingEffect
-            spread={60}
-            glow={true}
-            disabled={false}
-            proximity={64}
-            inactiveZone={0.01}
-            borderWidth={5}
-            blur={10}
-          />
+        <div className="rounded-[50px] relative" style={{ aspectRatio: '1855/952' }}>
+          {/* Performance-intensive GlowingEffect entfernt */}
           <Image
-            src="/dash.png"
-            alt="header"
+            src="/dash.jpg"
+            alt="TradingCoach Dashboard"
             width={1855}
             height={952}
-            className="rounded-[20px]  h-auto object-cover  w-full"
+            className="rounded-[20px] h-auto object-cover w-full"
+            priority={true}
+            loading="eager"
+            quality={75}
+            sizes="(max-width: 768px) 100vw, 1855px"
+            fetchPriority="high"
           />
           <div
             className="absolute inset-0 rounded-[20px]"
@@ -109,7 +90,7 @@ export function Hero() {
             }}
           />
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }

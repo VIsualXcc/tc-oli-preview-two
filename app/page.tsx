@@ -1,5 +1,5 @@
 import { Suspense, lazy } from 'react';
-import { Hero} from "@/components/hero";
+import { Hero, SpotlightNewDemo } from "@/components/hero";
 import { HeroTwo } from "@/components/hero_TwoColumn";
 import LazyLoad from '@/components/lazy-load';
 
@@ -21,37 +21,40 @@ export default function Home() {
       <Hero />
       <HeroTwo />
       
-      <LazyLoad height={300}>
+      {/* Demo-Komponente auskommentiert - bei Bedarf aktivieren */}
+      {/* <SpotlightNewDemo /> */}
+      
+      <LazyLoad height={300} priority={false}>
         <Suspense fallback={<Loader />}>
           <SpotlightLogoCloud />
         </Suspense>
       </LazyLoad>
       
-      <LazyLoad height={400}>
+      <LazyLoad height={400} priority={false}>
         <Suspense fallback={<Loader />}>
           <Features />
         </Suspense>
       </LazyLoad>
       
-      <LazyLoad height={400}>
+      <LazyLoad height={400} priority={false}>
         <Suspense fallback={<Loader />}>
           <Testimonials />
         </Suspense>
       </LazyLoad>
       
-      <LazyLoad height={500}>
+      <LazyLoad height={500} priority={false}>
         <Suspense fallback={<Loader />}>
           <Pricing />
         </Suspense>
       </LazyLoad>
       
-      <LazyLoad height={400}>
+      <LazyLoad height={400} priority={false}>
         <Suspense fallback={<Loader />}>
           <FrequentlyAskedQuestions />
         </Suspense>
       </LazyLoad>
       
-      <LazyLoad height={200}>
+      <LazyLoad height={200} priority={false}>
         <Suspense fallback={<Loader />}>
           <CTA />
         </Suspense>

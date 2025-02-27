@@ -33,7 +33,7 @@ export function Testimonials() {
           <TestimonialCard
             name="Gabrielle Kaufmann"
             role="Fortex Traderin"
-            image="/images/person3.png"
+            image="/images/person8.png"
             quote="Es gibt neben Videos auch persönliche Unterstützung, Frauengruppen. Also Mädels, Hausfrauen bitte fängt an zu Traden."
             className="lg:mt-[50px]"
           />
@@ -54,7 +54,7 @@ export function Testimonials() {
           <TestimonialCard
             name="Gabrielle Kaufmann"
             role="Fortex Traderin"
-            image="/images/person3.png"
+            image="/images/person8.png"
             quote="Es gibt neben Videos auch persönliche Unterstützung, Frauengruppen. Also Mädels, Hausfrauen bitte fängt an zu Traden."
             className="lg:mt-[50px]"
           />

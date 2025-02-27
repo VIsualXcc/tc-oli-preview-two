@@ -5,25 +5,9 @@ import { cn } from "@/lib/utils";
 import { Button } from "./button";
 // IconGift import entfernt, da es nicht verwendet wird
 
-import { useEffect, useState } from "react";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
-function useMediaQuery(query: string): boolean {
-  const [matches, setMatches] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia(query);
-    setMatches(mediaQuery.matches);
-
-    const listener = (e: MediaQueryListEvent) => {
-      setMatches(e.matches);
-    };
-
-    mediaQuery.addEventListener("change", listener);
-    return () => mediaQuery.removeEventListener("change", listener);
-  }, [query]);
-
-  return matches;
-}
+// useMediaQuery Hook in der Komponente entfernt, da er jetzt importiert wird
 
 export enum planType {
   basic = "basic",
@@ -179,10 +163,14 @@ const MobileCard = ({ plan }: { plan: Plan }) => {
           {plan.buttonText}
         </Button>
 
-        {plan.subText && (
+        {typeof plan.subText === 'string' ? (
           <p className="text-xs text-neutral-500 text-center mt-2">
             {plan.subText}
           </p>
+        ) : (
+          <div className="text-xs text-center mt-2">
+            {plan.subText}
+          </div>
         )}
       </div>
     </div>
@@ -258,8 +246,12 @@ const DesktopCard = ({ plan }: { plan: Plan }) => {
           >
             {plan.buttonText}
           </Button>
-          {plan.subText && (
+          {typeof plan.subText === 'string' ? (
             <div className="text-sm text-neutral-500 text-center mt-4">
+              {plan.subText}
+            </div>
+          ) : (
+            <div className="text-sm text-center mt-4">
               {plan.subText}
             </div>
           )}
