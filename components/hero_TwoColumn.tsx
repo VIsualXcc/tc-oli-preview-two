@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { HiArrowRight } from "react-icons/hi2";
+import YouTubeWrapper from "./youtube-wrapper";
 import Image from "next/image";
 import Link from "next/link";
 import { Spotlight } from "./ui/spotlight-new";
@@ -53,17 +54,10 @@ export function HeroTwo() {
         </motion.div>
       </div>
       <div>
-      {/* YouTube-Video via <iframe> */}
+      {/* Enhanced YouTube component with performance optimization */}
       <div className="border border-neutral-700 rounded-3xl p-4 bg-neutral-900 shadow-[0px_0px_5px_1px_rgba(255,255,255,0.05)_inset]">
-        <div className="relative w-full pb-[56.25%] h-0 rounded-2xl overflow-hidden">
-          <iframe
-            className="absolute top-0 left-0 w-full h-full rounded-2xl"
-            src="https://www.youtube.com/embed/fNILBkfYLqQ"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+        {/* @ts-expect-error Server Component */}
+        <YouTubeWrapper videoId="fNILBkfYLqQ" aspectRatio="16:9" />
       </div>
       </div>
     </div>
