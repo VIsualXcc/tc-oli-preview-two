@@ -67,6 +67,7 @@ export function Hero() {
       {/* Hero Image Container - optimiert und vereinfacht */}
       <div
         className="relative mx-auto w-full max-w-7xl p-2 backdrop-blur-lg md:p-4"
+        
       >
         <div className="rounded-[50px] relative" style={{ aspectRatio: '1855/952' }}>
           {/* Performance-intensive GlowingEffect entfernt */}
@@ -75,7 +76,7 @@ export function Hero() {
             alt="TradingCoach Dashboard"
             width={1855}
             height={952}
-            className="rounded-[20px] h-auto object-cover w-full"
+            className="rounded-[20px] h-auto object-cover w-full "
             priority={true}
             loading="eager"
             quality={75}

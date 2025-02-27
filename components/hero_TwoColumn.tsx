@@ -76,22 +76,22 @@ export const testimonials = [
       "/images/person7.png",
   },
   {
-    name: "Gerit Kraus",
-    designation: "Liquidity Trader",
-    image:
-    "/images/person9.png",
-  },
-  {
     name: "Petra Schmidt",
     designation: "Ehem. Krankenschwetser",
     image:
     "/images/person8.png",
   },
   {
+    name: "Gerit Kraus",
+    designation: "Liquidity Trader",
+    image:
+    "/images/person27.png",
+  },
+  {
     name: "Dora Klein",
     designation: "Commodities Trader",
     image:
-    "/images/person10.png",
+    "/images/person16.png",
   },
   {
     name: "Stefan Menne",
@@ -100,7 +100,7 @@ export const testimonials = [
     "/images/person11.png",
   },
   {
-    name: "Nancy Davids",
+    name: "Hans Davids",
     designation: "Futures Trader",
     image:
     "/images/person13.png",
@@ -247,7 +247,7 @@ export const FeaturedImages = ({
           textClassName
         )}
       >
-        Trusted by 1.500+ tradern
+        Trusted by 1.500+ Trader
       </p>
     </div>
   );
