@@ -12,38 +12,38 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export function Footer() {
   const documentation = [
-    { title: "Vorbereitung", href: "https://tradingcoacholi.com/" },
-    { title: "Bewerbung", href: "https://tradingcoacholi.com/" },
-    { title: "Club", href: "https://tradingcoacholi.com/" },
-    { title: "Elite", href: "https://tradingcoacholi.com/" },
-    { title: "Mentoring", href: "https://tradingcoacholi.com/" },
+    { title: "Vorbereitung", href: "https://tradingcoacholi.com/", ariaLabel: "Mehr zur Trading-Vorbereitung" },
+    { title: "Bewerbung", href: "https://tradingcoacholi.com/", ariaLabel: "Bewerbung für das Trading-Coaching" },
+    { title: "Club", href: "https://tradingcoacholi.com/", ariaLabel: "Mehr über den Trading Club erfahren" },
+    { title: "Elite", href: "https://tradingcoacholi.com/", ariaLabel: "Details zum Elite-Trading-Programm" },
+    { title: "Mentoring", href: "https://tradingcoacholi.com/", ariaLabel: "Infos zum Mentoring-Programm" },
   ];
   
   const resources = [
-    { title: "Änderungen", href: "https://tradingcoacholi.com/" },
-    { title: "Preise", href: "https://tradingcoacholi.com/" },
-    { title: "Affiliate", href: "https://tradingcoacholi.com/" },
-    { title: "Links", href: "https://tradingcoacholi.com/" },
+    { title: "Änderungen", href: "https://tradingcoacholi.com/", ariaLabel: "Aktuelle Änderungen anzeigen" },
+    { title: "Preise", href: "https://tradingcoacholi.com/", ariaLabel: "Preise und Tarife ansehen" },
+    { title: "Affiliate", href: "https://tradingcoacholi.com/", ariaLabel: "Affiliate-Programm für Partner" },
+    { title: "Links", href: "https://tradingcoacholi.com/", ariaLabel: "Nützliche Links entdecken" },
   ];
   
   const company = [
-    { title: "Hilfe", href: "https://tradingcoacholi.com/" },
-    { title: "Kontakt", href: "https://tradingcoacholi.com/" },
-    { title: "Kunden", href: "https://tradingcoacholi.com/" },
-    { title: "Partner", href: "https://tradingcoacholi.com/" },
+    { title: "Hilfe", href: "https://tradingcoacholi.com/", ariaLabel: "Hilfe & Support erhalten" },
+    { title: "Kontakt", href: "https://tradingcoacholi.com/", ariaLabel: "Kontakt aufnehmen" },
+    { title: "Kunden", href: "https://tradingcoacholi.com/", ariaLabel: "Erfahrungen unserer Kunden" },
+    { title: "Partner", href: "https://tradingcoacholi.com/", ariaLabel: "Unsere Partner kennenlernen" },
   ];
   
   const legal = [
-    { title: "Datenschutz", href: "https://tradingcoacholi.com/" },
-    { title: "Impressum", href: "https://tradingcoacholi.com/" },
-    { title: "AGB", href: "https://tradingcoacholi.com/" },
+    { title: "Datenschutz", href: "https://tradingcoacholi.com/", ariaLabel: "Datenschutzerklärung einsehen" },
+    { title: "Impressum", href: "https://tradingcoacholi.com/", ariaLabel: "Impressum und rechtliche Hinweise" },
+    { title: "AGB", href: "https://tradingcoacholi.com/", ariaLabel: "Allgemeine Geschäftsbedingungen (AGB) lesen" },
   ];
 
   const socials = [
-    { title: "Twitter", href: "https://x.com/tradingcoacholi", icon: FaXTwitter },
-    { title: "Facebook", href: "https://www.facebook.com/groups/222610614960586/", icon: IconBrandFacebook },
-    { title: "LinkedIn", href: "https://www.instagram.com/tradingcoacholi/", icon: IconBrandInstagram },
-    { title: "Youtube", href: "https://www.youtube.com/@TradingCoachOli", icon: IconBrandYoutube },
+    { title: "Twitter", href: "https://x.com/tradingcoacholi", icon: FaXTwitter, ariaLabel: "Folge uns auf Twitter (X)" },
+    { title: "Facebook", href: "https://www.facebook.com/groups/222610614960586/", icon: IconBrandFacebook, ariaLabel: "Trete unserer Facebook-Community bei" },
+    { title: "LinkedIn", href: "https://www.instagram.com/tradingcoacholi/", icon: IconBrandInstagram, ariaLabel: "Folge uns auf Instagram" },
+    { title: "Youtube", href: "https://www.youtube.com/@TradingCoachOli", icon: IconBrandYoutube, ariaLabel: "Besuche unseren YouTube-Kanal" },
   ];
 
   return (
