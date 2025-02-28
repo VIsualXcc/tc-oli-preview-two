@@ -42,7 +42,7 @@ export function Footer() {
     { title: "Twitter", href: "#", icon: FaXTwitter },
     { title: "Discord", href: "#", icon: IconBrandDiscord },
     { title: "LinkedIn", href: "#", icon: IconBrandLinkedin },
-    { title: "Youtube", href: "#", icon: IconBrandYoutube },
+    { title: "Youtube", href: "https://www.youtube.com/@TradingCoachOli", icon: IconBrandYoutube },
   ];
 
   return (

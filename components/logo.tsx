@@ -9,7 +9,7 @@ const LogoIcon = () => (
         src="/logo.png"
         alt="Trading Coach Oli Logo"
         width={60} // Anpassbare Größe
-        height={60}
+        height={28}
         priority
         className=""
       />
@@ -19,7 +19,7 @@ const LogoIcon = () => (
 export const Logo = () => {
   return (
     <Link
-      href="/"
+      href="https://tradingcoacholi.com"
       className="font-normal flex gap-2 items-center text-sm text-black px-2 py-1 shrink-0 relative z-20"
     >
       <LogoIcon />

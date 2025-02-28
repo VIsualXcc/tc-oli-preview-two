@@ -162,7 +162,7 @@ const DesktopNav = ({ navItems, visible }: NavbarProps) => {
             >
               <Button
                 as={Link}
-                href="/"
+                href="https://tradingcoacholi.mymemberspot.de/auth/login?redirectTo=%2Fstartpage"
                 variant="primary"
                 className="hidden md:block rounded-full bg-white/20 hover:bg-white/30 text-white border-0"
               >

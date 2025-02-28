@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { HiArrowRight } from "react-icons/hi2";
-import YouTubeWrapper from "./youtube-wrapper";
+import YouTubeSimple from "./youtube-simple";
 import Image from "next/image";
 import Link from "next/link";
 import { Spotlight } from "./ui/spotlight-new";
@@ -44,7 +44,7 @@ export function HeroTwo() {
         >
           <Button
             as={Link}
-            href="/login"
+            href="https://tradingcoacholi.mymemberspot.de/auth/login?redirectTo=%2Fstartpage"
             variant="primary"
             className="w-full sm:w-40 h-12 rounded-full flex items-center justify-center"
           >
@@ -54,10 +54,9 @@ export function HeroTwo() {
         </motion.div>
       </div>
       <div>
-      {/* Enhanced YouTube component with performance optimization */}
+      {/* Simple YouTube component with performance optimization */}
       <div className="border border-neutral-700 rounded-3xl p-4 bg-neutral-900 shadow-[0px_0px_5px_1px_rgba(255,255,255,0.05)_inset]">
-        {/* @ts-expect-error Server Component */}
-        <YouTubeWrapper videoId="fNILBkfYLqQ" aspectRatio="16:9" />
+        <YouTubeSimple videoId="fNILBkfYLqQ" aspectRatio="16:9" title="Trading Coach Oliver Klemm" />
       </div>
       </div>
     </div>

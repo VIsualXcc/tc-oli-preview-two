@@ -39,7 +39,9 @@ const nextConfig = {
       { hostname: "www.abzocktest.com"},
       { hostname: "www.kagels-trading.de"},
       { hostname: "uxwing.com"},
-      { hostname: "media.cleanshot.cloud"}
+      { hostname: "media.cleanshot.cloud"},
+      { hostname: "img.youtube.com"},
+      { hostname: "i.ytimg.com"}
     ],
   },
 };

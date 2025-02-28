@@ -4,6 +4,11 @@ import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { YouTubeVideoDetails } from '@/lib/api/youtube';
 
+// Static thumbnail placeholder function that doesn't rely on API
+const getYouTubeThumbnailUrl = (videoId: string, quality: 'default' | 'hq' | 'mq' | 'sd' | 'maxres' = 'maxres') => {
+  return `https://img.youtube.com/vi/${videoId}/${quality}default.jpg`;
+};
+
 interface EnhancedYouTubeProps {
   videoId: string;
   title?: string;
@@ -52,7 +57,7 @@ export default function EnhancedYouTube({
       return videoDetails.thumbnails.high.url;
     }
     // Fallback to direct YouTube image URL if we don't have video details
-    return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+    return getYouTubeThumbnailUrl(videoId);
   };
 
   // Load video when play button is clicked
@@ -65,22 +70,25 @@ export default function EnhancedYouTube({
 
   // For client-side loading of video details if not provided server-side
   useEffect(() => {
-    // Only fetch if we don't already have details and we're not in placeholder mode
-    if (!videoDetails && !placeholder && typeof window !== 'undefined') {
-      const loadVideoDetails = async () => {
-        try {
-          const response = await fetch(`/api/youtube?videoId=${videoId}`);
-          if (response.ok) {
-            const data = await response.json();
-            setVideoDetails(data);
-          }
-        } catch (error) {
-          console.error('Error loading video details:', error);
-        }
-      };
-      
-      loadVideoDetails();
-    }
+    // Temporarily disabled to prevent 403 errors
+    // We'll just use the static thumbnail approach
+    
+    // Uncomment this when the API key is properly configured:
+    // if (!videoDetails && !placeholder && typeof window !== 'undefined') {
+    //   const loadVideoDetails = async () => {
+    //     try {
+    //       const response = await fetch(`/api/youtube?videoId=${videoId}`);
+    //       if (response.ok) {
+    //         const data = await response.json();
+    //         setVideoDetails(data);
+    //       }
+    //     } catch (error) {
+    //       console.error('Error loading video details:', error);
+    //     }
+    //   };
+    //   
+    //   loadVideoDetails();
+    // }
   }, [videoId, videoDetails, placeholder]);
 
   return (

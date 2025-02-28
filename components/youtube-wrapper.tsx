@@ -21,12 +21,15 @@ export default async function YouTubeWrapper({
   // Try to fetch the video details on the server
   let videoDetails = null;
   
-  try {
-    videoDetails = await getYouTubeVideoDetails(videoId);
-  } catch (error) {
-    console.error('Error fetching YouTube data on server:', error);
-    // Continue with null videoDetails, will fetch on client
-  }
+  // Skip API call for now to prevent 403 errors
+  // We'll just use the static thumbnail approach
+  
+  // Uncomment this when the API key is properly configured:
+  // try {
+  //   videoDetails = await getYouTubeVideoDetails(videoId);
+  // } catch (error) {
+  //   console.error('Error fetching YouTube data on server:', error);
+  // }
 
   return (
     <EnhancedYouTube

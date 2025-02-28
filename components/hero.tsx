@@ -55,7 +55,7 @@ export function Hero() {
       >
         <Button
           as={Link}
-          href="/login"
+          href="https://tradingcoacholi.mymemberspot.de/auth/login?redirectTo=%2Fstartpagen"
           variant="primary"
           className="w-full sm:w-40 h-12 rounded-full flex items-center justify-center"
           aria-label="Jetzt für Coaching bewerben"
