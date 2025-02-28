@@ -22,42 +22,41 @@ export function Testimonials() {
               Schüler über uns sagen
             </h2>
             <p className="text-sm text-center lg:text-left mx-auto lg:mx-0 text-neutral-400 mt-6 max-w-sm">
-            Sieh Dir an, was unsere emaligen Schüler Sagen. 
-            Lass Dich von Ihrem Erfolg ispirieren. Die Zahlen lügen nicht.
-            </p>
+            Sieh, was unsere ehemaligen Schüler sagen.
+            Lass dich vom Erfolg inspirieren – die Zahlen sprechen für sich!            </p>
           </div>
         </div>
 
-        {/* Right Testimonials Section - 60% */}
-        <div className="w-full grid gap-8 grid-cols-1 lg:grid-cols-2 md:w-[60%] mx-auto">
-          <TestimonialCard
-            name="Gabrielle Kaufmann"
-            role="Fortex Traderin"
-            image="/images/person18.png"
-            quote="Es gibt neben Videos auch persönliche Unterstützung, Frauengruppen. Also Mädels, Hausfrauen bitte fängt an zu Traden."
-            className="lg:mt-[50px]"
-          />
-          <TestimonialCard
-            name="Axel Pasemann"
-            role="Day Trader"
-            image="/images/person29.png"
-            quote="Mein Weg zur Freiheit und Unabhängigkeit! Ich bin fast 1 Jahr dabei und habe es nicht bereut etwas Geld dafür auszugeben zu haben."
-            className="lg:mt-[50px]"
-          />
-          <TestimonialCard
-            name="Axel Pasemann"
-            role="Day Trader"
-            image="/images/person29.png"
-            quote="Mein Weg zur Freiheit und Unabhängigkeit! Ich bin fast 1 Jahr dabei und habe es nicht bereut etwas Geld dafür auszugeben zu haben."
-            className="lg:mt-[50px]"
-          />
-          <TestimonialCard
-            name="Gabrielle Kaufmann"
-            role="Fortex Traderin"
-            image="/images/person18.png"
-            quote="Es gibt neben Videos auch persönliche Unterstützung, Frauengruppen. Also Mädels, Hausfrauen bitte fängt an zu Traden."
-            className="lg:mt-[50px]"
-          />
+{/* Right Testimonials Section - 60% */}
+<div className="w-full grid gap-8 grid-cols-1 lg:grid-cols-2 md:w-[60%] mx-auto">
+  <TestimonialCard
+    name="Gabrielle Kaufmann"
+    role="Forex-Traderin"
+    image="/images/person18.png"
+    quote="Neben den Videos gibt es persönliche Unterstützung und spezielle Frauengruppen. Also Mädels, nutzt die Chance und startet mit dem Trading!"
+    className="lg:mt-[50px]"
+  />
+  <TestimonialCard
+    name="Axel Pasemann"
+    role="Day Trader"
+    image="/images/person29.png"
+    quote="Mein Weg zu finanzieller Freiheit und Unabhängigkeit! Ich bin seit fast einem Jahr dabei und jede Investition hat sich gelohnt."
+    className="lg:mt-[50px]"
+  />
+  <TestimonialCard
+    name="Axel Pasemann"
+    role="Day Trader"
+    image="/images/person29.png"
+    quote="Mein Weg zu finanzieller Freiheit und Unabhängigkeit! Ich bin seit fast einem Jahr dabei und jede Investition hat sich gelohnt."
+    className="lg:mt-[50px]"
+  />
+  <TestimonialCard
+    name="Gabrielle Kaufmann"
+    role="Forex-Traderin"
+    image="/images/person18.png"
+    quote="Neben den Videos gibt es persönliche Unterstützung und spezielle Frauengruppen. Also Mädels, nutzt die Chance und startet mit dem Trading!"
+    className="lg:mt-[50px]"
+  />
         </div>
       </div>
     </div>

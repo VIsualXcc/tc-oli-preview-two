@@ -60,7 +60,7 @@ const SEO = ({
               name: 'Trading Coach Oli',
               logo: {
                 '@type': 'ImageObject',
-                url: image,
+                url: /images/tco-logo-square-dark.png,
               },
             },
           }),

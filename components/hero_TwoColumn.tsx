@@ -26,7 +26,7 @@ export function HeroTwo() {
       <Spotlight className="z-0" />
       <div className="flex  flex-col items-start">
         <h3 className="text-3xl md:text-5xl md:leading-tight max-w-5xl text-left tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 via-white to-white">
-          Starte Deine Ausbildung zu Trader
+          Starte Deine Ausbildung zum Trader
         </h3>
         <p className=" mt-2 md:mt-6 text-left md:text-xl text-neutral-400 max-w-3xl relative z-10">
         Lerne von einem ehemaligen Deutsche-Bank-Trader mit über 30 Jahren Erfahrung auf internationalen Finanzmärkten. Werde Teil unserer Community mit mehr als 1.500 Mitgliedern und profitiere von exklusivem Wissen und Austausch.

@@ -37,8 +37,8 @@ export function SpotlightLogoCloud() {
           </h2>
       </div>
       <p className="text-center max-w-lg mx-auto text-base md:text-lg font-sans text-neutral-500 mt-4 mb-8 md:mb-10 px-4">
-      Mit Bestnoten empfohlen auf führenden Seiten der Trading Community. Echte Bewertungen, unabhängig getestet, Community Proofed. Kein Nepp.
-      </p>
+      Top-Bewertungen auf führenden Trading-Plattformen.
+      Echte Erfahrungsberichte, unabhängig geprüft und von der Community bestätigt – 100 % transparent, kein Nepp!      </p>
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-6 md:gap-10 w-full max-w-3xl mx-auto relative px-4">
         {logos.map((logo, idx) => (
           <div

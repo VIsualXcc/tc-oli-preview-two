@@ -84,7 +84,7 @@ export default function RootLayout({
               name: 'Trading Coach Oli',
               logo: {
                 '@type': 'ImageObject',
-                url: '/og_trading-coach-oli.png',
+                url: '/tco-logo-square-dark.png',
               },
             },
           })}

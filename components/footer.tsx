@@ -2,7 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { Logo } from "./logo";
 import {
-  IconBrandDiscord,
+  IconBrandFacebook,
+  IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandYoutube,
 } from "@tabler/icons-react";
@@ -11,37 +12,37 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export function Footer() {
   const documentation = [
-    { title: "Vorbereitung", href: "#" },
-    { title: "Bewerbung", href: "#" },
-    { title: "Club", href: "#" },
-    { title: "Elite", href: "#" },
-    { title: "Mentoring", href: "#" },
+    { title: "Vorbereitung", href: "https://tradingcoacholi.com/" },
+    { title: "Bewerbung", href: "https://tradingcoacholi.com/" },
+    { title: "Club", href: "https://tradingcoacholi.com/" },
+    { title: "Elite", href: "https://tradingcoacholi.com/" },
+    { title: "Mentoring", href: "https://tradingcoacholi.com/" },
   ];
-
+  
   const resources = [
-    { title: "Änderungen", href: "#" },
-    { title: "Preise", href: "#" },
-    { title: "Affiliate", href: "#" },
-    { title: "Links", href: "#" },
+    { title: "Änderungen", href: "https://tradingcoacholi.com/" },
+    { title: "Preise", href: "https://tradingcoacholi.com/" },
+    { title: "Affiliate", href: "https://tradingcoacholi.com/" },
+    { title: "Links", href: "https://tradingcoacholi.com/" },
   ];
-
+  
   const company = [
-    { title: "Hilfe", href: "#" },
-    { title: "Kontakt", href: "#" },
-    { title: "Kunden", href: "#" },
-    { title: "Partner", href: "#" },
+    { title: "Hilfe", href: "https://tradingcoacholi.com/" },
+    { title: "Kontakt", href: "https://tradingcoacholi.com/" },
+    { title: "Kunden", href: "https://tradingcoacholi.com/" },
+    { title: "Partner", href: "https://tradingcoacholi.com/" },
   ];
-
+  
   const legal = [
-    { title: "Datenschutz", href: "#" },
-    { title: "Impressum", href: "#" },
-    { title: "AGB", href: "#" },
+    { title: "Datenschutz", href: "https://tradingcoacholi.com/" },
+    { title: "Impressum", href: "https://tradingcoacholi.com/" },
+    { title: "AGB", href: "https://tradingcoacholi.com/" },
   ];
 
   const socials = [
-    { title: "Twitter", href: "#", icon: FaXTwitter },
-    { title: "Discord", href: "#", icon: IconBrandDiscord },
-    { title: "LinkedIn", href: "#", icon: IconBrandLinkedin },
+    { title: "Twitter", href: "https://x.com/tradingcoacholi", icon: FaXTwitter },
+    { title: "Facebook", href: "https://www.facebook.com/groups/222610614960586/", icon: IconBrandFacebook },
+    { title: "LinkedIn", href: "https://www.instagram.com/tradingcoacholi/", icon: IconBrandInstagram },
     { title: "Youtube", href: "https://www.youtube.com/@TradingCoachOli", icon: IconBrandYoutube },
   ];
 

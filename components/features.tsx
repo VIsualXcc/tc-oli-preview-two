@@ -38,10 +38,11 @@ export function Features() {
         </h2>
       </div>
       <p className="max-w-lg text-sm text-center mx-auto mt-4 text-neutral-400">
-        Lerne langsam und nachhaltig wie das Traden funktioniert. 
-        Lerne Dein neues Team kennen und aus ihrer Erfahrung. 
-        Unser Konzept verspricht keinen schnellen Erfolg, 
-        dafür echtes Lernen durch echte erfahrung und und langfristig echten Gewinn.
+      Lerne Trading Schritt für Schritt – nachhaltig und fundiert.
+      Tauche in unsere Community ein, profitiere von der Erfahrung 
+      deines Teams und baue dein Wissen systematisch auf. Wir versprechen
+       keine schnellen Erfolge, sondern echtes Lernen durch echte Erfahrung 
+       – für langfristige und stabile Gewinne.
       </p>
       <div className="mt-20  grid cols-1 lg:grid-cols-5 gap-4 auto-rows-[25rem] max-w-3xl mx-auto lg:max-w-none">
         <Card className="flex flex-col relative justify-between lg:col-span-2">
@@ -54,8 +55,8 @@ export function Features() {
               <br /> und richtiges Timing
             </CardTitle>
             <CardDescription>
-              Trainiere Dein Mindset. Kenne Deinen Markt. Erfahre Dein Wissen. Handle nach Wissen, nicht nach Gefühl.
-            </CardDescription>
+            Schärfe dein Mindset. Verstehe den Markt. Beherrsche dein Wissen.
+            Triff fundierte Entscheidungen – lerne das Timing.</CardDescription>
           </CardContent>
         </Card>
         <Card className="flex relative flex-col justify-between lg:col-span-3">
@@ -64,8 +65,8 @@ export function Features() {
               Trading Expertise<br /> an globalen Märkten
             </CardTitle>
             <CardDescription>
-              Handel von wo Du willst und wo immer Du bist. Bestimme Du den Ort wo Du sein möchtest. Befreie Dich von Deinem Altag.
-            </CardDescription>
+            Traden, wo und wann du willst.
+            Bestimme selbst deinen Standort, gestalte dein Leben frei, löse dich von deinem Alltag.            </CardDescription>
           </CardContent>
           <div className="absolute inset-0">
             <MapView />
@@ -77,7 +78,7 @@ export function Features() {
           >
             160
             <br />
-            Countries
+            Länder
           </h1>
         </Card>
         <Card className="flex flex-col relative justify-between lg:col-span-3">
@@ -114,8 +115,7 @@ export function Features() {
               Was die Presse <br /> über uns Schreibt
             </CardTitle>
             <CardDescription>
-              Lies was erfahrene Fach-Journalisten und unabhängige Plattformen über uns schreiben. Unbezahlt und neutral.
-            </CardDescription>
+            Erfahre, was unabhängige Fachjournalisten und renommierte Plattformen über uns berichten –  unbezahlt und authentisch.            </CardDescription>
           </CardContent>
           <CardSkeletonBody>
             <div className="w-full h-full p-4 rounded-lg px-10 mt-6">

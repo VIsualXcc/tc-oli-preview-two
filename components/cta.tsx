@@ -164,8 +164,8 @@ export default function CTA() {
             Starte jetzt Deine Ausbildung zu Trader
           </h2>
           <p className="max-w-lg text-xs sm:text-sm md:text-base text-neutral-400 text-center mx-auto my-4 md:my-6 lg:my-8 px-4">
-            Je schneller Du mit der Ausbildung beginnst, desto schneller bist Du fertig. Verliere keine Zeit – Zeit ist Geld.
-          </p>
+          Je früher du startest, desto schneller erreichst du dein Ziel. Warte nicht – denn Zeit ist Geld!         
+         </p>
         </div>
         <BackgroundGrid className="mt-8 md:mt-16 lg:mt-36 z-0" />
         <motion.div
