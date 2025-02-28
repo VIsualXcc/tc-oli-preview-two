@@ -4,7 +4,6 @@ import { Logo } from "./logo";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
-  IconBrandLinkedin,
   IconBrandYoutube,
 } from "@tabler/icons-react";
 import { FaXTwitter } from "react-icons/fa6";
@@ -42,7 +41,7 @@ export function Footer() {
   const socials = [
     { title: "Twitter", href: "https://x.com/tradingcoacholi", icon: FaXTwitter, ariaLabel: "Folge uns auf Twitter (X)" },
     { title: "Facebook", href: "https://www.facebook.com/groups/222610614960586/", icon: IconBrandFacebook, ariaLabel: "Trete unserer Facebook-Community bei" },
-    { title: "LinkedIn", href: "https://www.instagram.com/tradingcoacholi/", icon: IconBrandInstagram, ariaLabel: "Folge uns auf Instagram" },
+    { title: "Instagram", href: "https://www.instagram.com/tradingcoacholi/", icon: IconBrandInstagram, ariaLabel: "Folge uns auf Instagram" },
     { title: "Youtube", href: "https://www.youtube.com/@TradingCoachOli", icon: IconBrandYoutube, ariaLabel: "Besuche unseren YouTube-Kanal" },
   ];
 
