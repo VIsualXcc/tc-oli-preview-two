@@ -354,7 +354,7 @@ function BackgroundShape() {
   return (
     <div className="absolute inset-0 overflow-hidden">
       <div
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(255,255,255,0.1)]"
+        className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(255,255,255,0.1)]"
         style={{
           width: size,
           height: size,
@@ -381,7 +381,7 @@ function BackgroundShape() {
         />
       </div>
       <div
-        className="absolute bg-black z-2 left-1/2 top-1/2 
+        className="absolute bg-black z-4 left-1/2 top-1/2 
           -translate-x-1/2 -translate-y-1/2 rounded-full 
           border border-[rgba(255,255,255,0.1)]
           shadow-[0_0_200px_80px_rgba(255,255,255,0.1)]"

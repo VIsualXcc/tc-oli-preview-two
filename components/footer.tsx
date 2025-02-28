@@ -59,8 +59,8 @@ export function Footer() {
             <Logo />
             <div className="flex gap-3 mt-6">
               {socials.map((social, idx) => (
-                <SocialIcon key={`social-${idx}`} href={social.href} aria-label={social.ariaLabel}>
-                  <social.icon strokeWidth={1.5} width={15} height={15} />
+                <SocialIcon key={`social-${idx}`} href={social.href} >
+                  <social.icon strokeWidth={1.5} width={15} height={15} aria-label={social.ariaLabel}/>
                 </SocialIcon>
               ))}
             </div>
