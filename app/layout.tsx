@@ -10,11 +10,11 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Trading Coach Oli | Daytrading Insider von Ex-Deutsche Bank Trader",
+  title: "Trading Coach Oli | Daytrading Mentorship",
   description: "Lerne profitables Trading mit professionellem Coaching von Trading Coach Oli. Exklusive Strategien für Anfänger & Profis, um an der Börse erfolgreich zu handeln!",
   keywords: "Trading Coaching, Trading lernen, professionelle Trader, Trading Coach, Aktienhandel, Krypto Trading, Daytrading, Coaching, Oliver Klemm, Börse, Aktien, Investment, Trading Ausbildung, Mentoring, Trading Strategien, Trading Psychologie",
   authors: [{ name: "Oliver Klemm" }],
-  creator: "Oliver Klemm",
+  creator: "GO4 & Claude",
   publisher: "Trading Coach Oli",
   metadataBase: new URL("https://tc-oli-two.visualx.cc"),
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Trading Coach Oli | Daytrading Insider von Ex-Deutsche Bank Trader",
+    title: "Trading Coach Oli | Daytrading Mentorship",
     description: "Lerne profitables Trading mit professionellem Coaching von Trading Coach Oli. Exklusive Strategien für Anfänger & Profis, um an der Börse erfolgreich zu handeln!", 
     url: "https://tc-oli-two.visualx.cc",
     siteName: "Trading Coach Oli",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Trading Coach Oli | Daytrading Insider von Ex-Deutsche Bank Trader",
+    title: "Trading Coach Oli | Daytrading Mentorship",
     description: "Lerne profitables Trading mit professionellem Coaching von Trading Coach Oli. Exklusive Strategien für Anfänger & Profis, um an der Börse erfolgreich zu handeln!",
     site: "@TradingCoachOli",
     images: [{

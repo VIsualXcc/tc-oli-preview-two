@@ -29,7 +29,7 @@ export function HeroTwo() {
           Starte Deine Ausbildung zu Trader
         </h3>
         <p className=" mt-2 md:mt-6 text-left md:text-xl text-neutral-400 max-w-3xl relative z-10">
-          Lerne von einem Ex-Deutsche Bank trader, mit über 30 Jahren erfahrung auf internationalen Märkten. Profitiere von unserer Comunity mit 1500+ Mitgliedern.
+        Lerne von einem ehemaligen Deutsche-Bank-Trader mit über 30 Jahren Erfahrung auf internationalen Finanzmärkten. Werde Teil unserer Community mit mehr als 1.500 Mitgliedern und profitiere von exklusivem Wissen und Austausch.
         </p>
         <FeaturedImages
           textClassName="lg:text-left text-left"

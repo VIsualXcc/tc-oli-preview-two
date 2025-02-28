@@ -19,7 +19,7 @@ export default async function YouTubeWrapper({
   className,
 }: YouTubeWrapperProps) {
   // Try to fetch the video details on the server
-  let videoDetails = null;
+  const videoDetails = null;
   
   // Skip API call for now to prevent 403 errors
   // We'll just use the static thumbnail approach
