@@ -37,7 +37,7 @@ export function Hero() {
         <h1
           className={cn(
             "inline-block bg-[radial-gradient(61.17%_178.53%_at_38.83%_-13.54%,#3B3B3B_0%,#888787_12.61%,#FFFFFF_50%,#888787_80%,#3B3B3B_100%)]",
-            "bg-clip-text text-transparent"
+            "bg-clip-text text-transparent mb-2"
           )}
         >
           Professional Daytrading by Coach Oliver Klemm
