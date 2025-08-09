@@ -23,19 +23,19 @@ interface NavbarProps {
 export const Navbar = () => {
   const navItems = [
     {
-      name: "home",
+      name: "Home",
       link: "/#home",
     },
     {
-      name: "coaching",
+      name: "Coaching",
       link: "/#product",
     },
     {
-      name: "references",
+      name: "Referenzen",
       link: "/#references",
     },
     {
-      name: "about",
+      name: "Über Mich",
       link: "/#about",
     },
   ];
@@ -166,7 +166,7 @@ const DesktopNav = ({ navItems, visible }: NavbarProps) => {
                 variant="primary"
                 className="hidden md:block rounded-full bg-white/20 hover:bg-white/30 text-white border-0"
               >
-                member login
+                login
               </Button>
             </motion.div>
           )}

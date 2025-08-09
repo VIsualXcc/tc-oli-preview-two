@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Trading Coach Oli | Daytrading Mentorship",
   description: "Lerne profitables Trading mit professionellem Coaching von Trading Coach Oli. Exklusive Strategien für Anfänger & Profis, um an der Börse erfolgreich zu handeln!",
-  keywords: "Trading Coaching, Trading lernen, professionelle Trader, Trading Coach, Aktienhandel, Krypto Trading, Daytrading, Coaching, Oliver Klemm, Börse, Aktien, Investment, Trading Ausbildung, Mentoring, Trading Strategien, Trading Psychologie",
+  keywords: "Trading Coaching, Trading lernen, professionelle Trader, Trading Coach, Aktienhandel, Daytrading, Coaching, Oliver Klemm, Börse, Aktien, Investment, Trading Ausbildung, Mentoring, Trading Strategien",
   authors: [{ name: "Oliver Klemm" }],
   creator: "GO4 & Claude",
   publisher: "Trading Coach Oli",

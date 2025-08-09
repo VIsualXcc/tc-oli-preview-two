@@ -255,7 +255,7 @@ export const FeaturedImages = ({
           textClassName
         )}
       >
-        Trusted by 1.500+ Trader
+        Trusted von 1.500+ Tradern
       </p>
     </div>
   );

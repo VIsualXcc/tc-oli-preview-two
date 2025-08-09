@@ -47,7 +47,7 @@ export function Hero() {
       <h2
         className="relative z-20 mx-auto mt-4 max-w-xl px-4 text-center text-base/6 text-white sm:text-base font-light"
       >
-        <span className="font-semibold">personal menthorship</span> &bull; <span className="font-semibold">proven market expert</span> &bull; <span className="font-semibold">30+ years experience</span>
+        <span className="font-semibold">Persönliches Menthorship</span> &bull; <span className="font-semibold">Markt Experte</span> &bull; <span className="font-semibold">30+ Jahre Erfahrung</span>
       </h2>
       
       <div
