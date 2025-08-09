@@ -34,10 +34,6 @@ export const Navbar = () => {
       name: "Referenzen",
       link: "/#references",
     },
-    {
-      name: "Über Mich",
-      link: "/#about",
-    },
   ];
 
   const ref = useRef<HTMLDivElement>(null);
