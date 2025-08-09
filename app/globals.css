@@ -30,11 +30,14 @@
   }
 }
 @layer base {
-
-}
-@layer base {
   :root {
     --radius: 0.5rem;
+    --background: #ffffff;
+    --foreground: #000000;
   }
-  
+
+  .dark {
+    --background: #0f172a;
+    --foreground: #f8fafc;
+  }
 }
