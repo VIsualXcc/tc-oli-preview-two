@@ -144,7 +144,7 @@ export default function CTA() {
   }, [controls, inView]);
 
   return (
-    <div className="bg-black w-full max-w-7xl mx-auto min-h-[80vh] md:min-h-[100dvh] flex items-center justify-center px-4 sm:px-6 lg:px-8 relative">
+    <div className="bg-black w-full max-w-7xl mx-auto min-h-[80vh] md:min-h-dvh flex items-center justify-center px-4 sm:px-6 lg:px-8 relative">
       <LineGradient position="left" />
       <motion.div
         ref={ref}
@@ -156,7 +156,7 @@ export default function CTA() {
           <h2
             className={cn(
               "inline-block text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold",
-              "bg-gradient-to-b from-[#3B3B3B] via-[#FFFFFF] to-[#3B3B3B]",
+              "bg-linear-to-b from-[#3B3B3B] via-[#FFFFFF] to-[#3B3B3B]",
               "bg-clip-text text-transparent",
               "px-4 md:px-8"
             )}

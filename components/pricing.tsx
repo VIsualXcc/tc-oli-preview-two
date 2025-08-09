@@ -156,8 +156,8 @@ const MobileCard = ({ plan }: { plan: Plan }) => {
           className={cn(
             "w-full py-2 text-sm rounded-lg",
             plan.id === planType.basic
-              ? "bg-gradient-to-b from-neutral-700 to-neutral-800"
-              : "!bg-[linear-gradient(180deg,#B6B6B6_0%,#313131_100%)]"
+              ? "bg-linear-to-b from-neutral-700 to-neutral-800"
+              : "bg-[linear-gradient(180deg,#B6B6B6_0%,#313131_100%)]!"
           )}
         >
           {plan.buttonText}
@@ -188,7 +188,7 @@ const DesktopCard = ({ plan }: { plan: Plan }) => {
     >
       {plan.badge && (
         <div className="text-center -mt-12 mb-6">
-          <span className="text-white text-sm px-4 py-1 rounded-[128px] bg-gradient-to-b from-[#393939] via-[#141414] to-[#303030] shadow-[0px_2px_6.4px_0px_rgba(0,0,0,0.60)]">
+          <span className="text-white text-sm px-4 py-1 rounded-[128px] bg-linear-to-b from-[#393939] via-[#141414] to-[#303030] shadow-[0px_2px_6.4px_0px_rgba(0,0,0,0.60)]">
             {plan.badge}
           </span>
         </div>
@@ -240,8 +240,8 @@ const DesktopCard = ({ plan }: { plan: Plan }) => {
             className={cn(
               "w-full py-3 rounded-xl",
               plan.id === planType.basic
-                ? "bg-gradient-to-b from-neutral-700 to-neutral-800 hover:from-neutral-600 hover:to-neutral-700"
-                : "!bg-[linear-gradient(180deg,#B6B6B6_0%,#313131_100%)] hover:shadow-[0_4px_12px_0px_rgba(0,0,0,0.4)]"
+                ? "bg-linear-to-b from-neutral-700 to-neutral-800 hover:from-neutral-600 hover:to-neutral-700"
+                : "bg-[linear-gradient(180deg,#B6B6B6_0%,#313131_100%)]! hover:shadow-[0_4px_12px_0px_rgba(0,0,0,0.4)]"
             )}
           >
             {plan.buttonText}

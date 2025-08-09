@@ -25,7 +25,7 @@ export function HeroTwo() {
       {/* Spotlight hinzugefügt */}
       <Spotlight className="z-0" />
       <div className="flex  flex-col items-start">
-        <h3 className="text-3xl md:text-5xl md:leading-tight max-w-5xl text-left tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 via-white to-white">
+        <h3 className="text-3xl md:text-5xl md:leading-tight max-w-5xl text-left tracking-tight font-bold bg-clip-text text-transparent bg-linear-to-b from-neutral-400 via-white to-white">
           Starte Deine Ausbildung zum Trader
         </h3>
         <p className=" mt-2 md:mt-6 text-left md:text-xl text-neutral-400 max-w-3xl relative z-10">
@@ -193,8 +193,8 @@ export const FeaturedImages = ({
                     }}
                     className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs  flex-col items-center justify-center rounded-md bg-neutral-900 z-50 shadow-xl px-4 py-2"
                   >
-                    <div className="absolute inset-x-0 z-30 w-[20%] mx-auto -bottom-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px " />
-                    <div className="absolute inset-x-0 w-[70%] mx-auto z-30 -bottom-px bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px " />
+                    <div className="absolute inset-x-0 z-30 w-[20%] mx-auto -bottom-px bg-linear-to-r from-transparent via-emerald-500 to-transparent h-px " />
+                    <div className="absolute inset-x-0 w-[70%] mx-auto z-30 -bottom-px bg-linear-to-r from-transparent via-sky-500 to-transparent h-px " />
                     <div className="flex items-center gap-2">
                       <div className="font-bold text-white relative z-30 text-sm">
                         {testimonial.name}

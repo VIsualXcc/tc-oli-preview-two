@@ -351,7 +351,7 @@ export const CardStack = ({
         return (
           <motion.div
             key={card.id}
-            className="absolute w-full h-full p-4 flex flex-col justify-between rounded-[16px] bg-[linear-gradient(180deg,#1D1D1D_0%,#131313_100%)] shadow-[0px_1px_1px_0px_rgba(121,121,121,0.70)_inset] border border-white/[0.1]"
+            className="absolute w-full h-full p-4 flex flex-col justify-between rounded-[16px] bg-[linear-gradient(180deg,#1D1D1D_0%,#131313_100%)] shadow-[0px_1px_1px_0px_rgba(121,121,121,0.70)_inset] border border-white/10"
             style={{
               transformOrigin: "top center",
             }}
@@ -394,7 +394,7 @@ export const Highlight = ({
   return (
     <span
       className={cn(
-        "font-bold bg-emerald-100  bg-emerald-700/[0.2] text-emerald-500 px-1 py-0.5",
+        "font-bold  bg-emerald-700/20 text-emerald-500 px-1 py-0.5",
         className
       )}
     >
@@ -773,7 +773,7 @@ const OrbitingIcons = ({
           style={{ zIndex: orbits.length - orbitIndex }}
         >
           <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[343.721px] border border-[#545454] bg-[linear-gradient(189deg,#252525_5.97%,#0E0E0E_92.92%)] shadow-[0px_115px_32px_0px_rgba(0,0,0,0.01),_0px_74px_29px_0px_rgba(0,0,0,0.05),_0px_41px_25px_0px_rgba(0,0,0,0.16),_0px_18px_18px_0px_rgba(0,0,0,0.27),_0px_5px_10px_0px_rgba(0,0,0,0.31),inset_0px_0px_20px_rgba(0,0,0,0.5)]"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[343.721px] border border-[#545454] bg-[linear-gradient(189deg,#252525_5.97%,#0E0E0E_92.92%)] shadow-[0px_115px_32px_0px_rgba(0,0,0,0.01),0px_74px_29px_0px_rgba(0,0,0,0.05),0px_41px_25px_0px_rgba(0,0,0,0.16),0px_18px_18px_0px_rgba(0,0,0,0.27),0px_5px_10px_0px_rgba(0,0,0,0.31),inset_0px_0px_20px_rgba(0,0,0,0.5)]"
             style={{
               width: orbit.radius * 2 + "px",
               height: orbit.radius * 2 + "px",
@@ -906,7 +906,7 @@ const MapView = () => {
         <Image
           src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
           className="h-full w-full object-cover absolute top-0 -right-2 -mt-14 
-            [mask-image:linear-gradient(to_bottom,transparent,white_15%,white_85%,transparent)]
+            mask-[linear-gradient(to_bottom,transparent,white_15%,white_85%,transparent)]
             pointer-events-none select-none opacity-50"
           alt="Interactive world map visualization"
           height={595}

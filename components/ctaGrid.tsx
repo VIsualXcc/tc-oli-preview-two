@@ -6,7 +6,7 @@ import { HiArrowRight } from "react-icons/hi2";
 
 export function CTAWithDashedGridLines() {
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-3 my-20 md:my-40 justify-start relative z-20 max-w-7xl mx-auto bg-gradient-to-br from-gray-100 to-white dark:from-neutral-900 dark:to-neutral-950">
+    <section className="w-full grid grid-cols-1 md:grid-cols-3 my-20 md:my-40 justify-start relative z-20 max-w-7xl mx-auto bg-linear-to-br from-gray-100 to-white dark:from-neutral-900 dark:to-neutral-950">
       <GridLineHorizontal className="top-0" offset="200px" />
       <GridLineHorizontal className="bottom-0 top-auto" offset="200px" />
       <GridLineVertical className="left-0" offset="80px" />
@@ -25,7 +25,7 @@ export function CTAWithDashedGridLines() {
         </p>
 
         <div className="flex items-start sm:items-center flex-col sm:flex-row sm:gap-4">
-          <button className="mt-8 flex space-x-2 items-center group text-base px-4 py-2 rounded-lg bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
+          <button className="mt-8 flex space-x-2 items-center group text-base px-4 py-2 rounded-lg bg-linear-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
             <span>Buy now</span>
             <HiArrowRight className="text-white group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
           </button>
@@ -76,11 +76,11 @@ const GridLineHorizontal = ({
         } as React.CSSProperties
       }
       className={cn(
-        "absolute w-[calc(100%+var(--offset))] h-[var(--height)] left-[calc(var(--offset)/2*-1)]",
+        "absolute w-[calc(100%+var(--offset))] h-(--height) left-[calc(var(--offset)/2*-1)]",
         "bg-[linear-gradient(to_right,var(--color),var(--color)_50%,transparent_0,transparent)]",
-        "[background-size:var(--width)_var(--height)]",
-        "[mask:linear-gradient(to_left,var(--background)_var(--fade-stop),transparent),_linear-gradient(to_right,var(--background)_var(--fade-stop),transparent),_linear-gradient(black,black)]",
-        "[mask-composite:exclude]",
+        "bg-size-[var(--width)_var(--height)]",
+        "[mask:linear-gradient(to_left,var(--background)_var(--fade-stop),transparent),linear-gradient(to_right,var(--background)_var(--fade-stop),transparent),linear-gradient(black,black)]",
+        "mask-exclude",
         "z-30",
         "dark:bg-[linear-gradient(to_right,var(--color-dark),var(--color-dark)_50%,transparent_0,transparent)]",
         className
@@ -111,11 +111,11 @@ const GridLineVertical = ({
         } as React.CSSProperties
       }
       className={cn(
-        "absolute h-[calc(100%+var(--offset))] w-[var(--width)] top-[calc(var(--offset)/2*-1)]",
+        "absolute h-[calc(100%+var(--offset))] w-(--width) top-[calc(var(--offset)/2*-1)]",
         "bg-[linear-gradient(to_bottom,var(--color),var(--color)_50%,transparent_0,transparent)]",
-        "[background-size:var(--width)_var(--height)]",
-        "[mask:linear-gradient(to_top,var(--background)_var(--fade-stop),transparent),_linear-gradient(to_bottom,var(--background)_var(--fade-stop),transparent),_linear-gradient(black,black)]",
-        "[mask-composite:exclude]",
+        "bg-size-[var(--width)_var(--height)]",
+        "[mask:linear-gradient(to_top,var(--background)_var(--fade-stop),transparent),linear-gradient(to_bottom,var(--background)_var(--fade-stop),transparent),linear-gradient(black,black)]",
+        "mask-exclude",
         "z-30",
         "dark:bg-[linear-gradient(to_bottom,var(--color-dark),var(--color-dark)_50%,transparent_0,transparent)]",
         className

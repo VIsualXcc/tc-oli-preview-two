@@ -117,7 +117,7 @@ const FAQItem = ({
             )}
           </AnimatePresence>
         </div>
-        <div className="relative mr-2 md:mr-4 mt-1 h-5 w-5 md:h-6 md:w-6 flex-shrink-0">
+        <div className="relative mr-2 md:mr-4 mt-1 h-5 w-5 md:h-6 md:w-6 shrink-0">
           <motion.div
             animate={{
               scale: isOpen ? [0, 1] : [1, 0, 1],

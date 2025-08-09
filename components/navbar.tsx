@@ -83,7 +83,7 @@ const DesktopNav = ({ navItems, visible }: NavbarProps) => {
         damping: 30,
       }}
       className={cn(
-        "hidden lg:flex flex-row self-center items-center justify-between py-2 mx-auto px-6 rounded-full relative z-[60] backdrop-saturate-[1.8]"
+        "hidden lg:flex flex-row self-center items-center justify-between py-2 mx-auto px-6 rounded-full relative z-60 backdrop-saturate-[1.8]"
       )}
     >
       <Logo />
@@ -108,7 +108,7 @@ const DesktopNav = ({ navItems, visible }: NavbarProps) => {
               {hoveredIndex === idx && (
                 <motion.div
                   layoutId="menu-hover"
-                  className="absolute inset-0 rounded-full bg-gradient-to-r from-white/10 to-white/20"
+                  className="absolute inset-0 rounded-full bg-linear-to-r from-white/10 to-white/20"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{
                     opacity: 1,

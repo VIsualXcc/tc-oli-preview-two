@@ -41,7 +41,7 @@ export default function OptimizedImage({
           onLoad={() => setIsLoaded(true)}
           className={cn(
             blur && 'transition-all duration-500',
-            blur && !isLoaded && 'blur-sm scale-105',
+            blur && !isLoaded && 'blur-xs scale-105',
             className
           )}
           loading={priority ? 'eager' : 'lazy'}

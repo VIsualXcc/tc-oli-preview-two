@@ -46,10 +46,10 @@ export function Footer() {
   ];
 
   return (
-    <div className="relative border-t border-white/[0.1] px-8 py-20 bg-black w-full overflow-hidden mx-auto max-w-7xl">
+    <div className="relative border-t border-white/10 px-8 py-20 bg-black w-full overflow-hidden mx-auto max-w-7xl">
       <div className="absolute bottom-full left-1/2 -translate-x-1/2 -mb-px flex h-8 items-end overflow-hidden">
         <div className="flex -mb-px h-[2px] w-56">
-          <div className="w-full flex-none [background-image:linear-gradient(90deg,rgba(255,255,255,0)_0%,#FFFFFF_32.29%,rgba(255,255,255,0.3)_67.19%,rgba(255,255,255,0)_100%)] blur-xs" />
+          <div className="w-full flex-none bg-[linear-gradient(90deg,rgba(255,255,255,0)_0%,#FFFFFF_32.29%,rgba(255,255,255,0.3)_67.19%,rgba(255,255,255,0)_100%)] blur-xs" />
         </div>
       </div>
 
@@ -146,7 +146,7 @@ export function SocialIcon({ href, children }: SocialIconProps) {
   return (
     <Link
       href={href}
-      className="w-10 h-10 bg-transparent rounded-full flex items-center justify-center hover:bg-neutral-700/20 transition-all border border-neutral-700/50 shadow-[2px_-2px_15px_rgba(0,0,0,0.2)] hover:shadow-[4px_-4px_20px_rgba(0,0,0,0.3)] relative before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:to-transparent before:rounded-full"
+      className="w-10 h-10 bg-transparent rounded-full flex items-center justify-center hover:bg-neutral-700/20 transition-all border border-neutral-700/50 shadow-[2px_-2px_15px_rgba(0,0,0,0.2)] hover:shadow-[4px_-4px_20px_rgba(0,0,0,0.3)] relative before:absolute before:inset-0 before:bg-linear-to-br before:from-white/10 before:to-transparent before:rounded-full"
     >
       <div className="w-5 h-5 text-neutral-400 hover:text-white transition-colors flex justify-center items-center">
         {children}
